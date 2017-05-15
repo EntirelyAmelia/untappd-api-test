@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkins</title>
+    </head>
+    <body>
+        <h1>Checkins retrieved</h1>
+            <ul id="checkins">
+                {% for checkin in checkins %}
+                    <li><b>{{ checkin.breweryName }} {{ checkin.beerName }}</b>
+                        <br/>Checkin ID: {{ checkin.id }}
+                        <br/> {{ checkin.username }} - {{ checkin.userFirstName }} {{ checkin.userLastName }}
+                        {% if checkin.userPhotoUrl %}<br/><img style="max-width:64px;  max-height:64px;" src="{{ checkin.userPhotoUrl }}" /> {% endif %}
+                        {% if checkin.locationName %}<br/>Location: {{ checkin.locationName }} {% endif %}
+                        {% if checkin.rating %}<br/>Rating: {{ checkin.rating }} {% endif %}
+                        {% if checkin.comment %}<br/>Comment: {{ checkin.comment }} {% endif %}
+                        <br/><br/>
+                    </li>
+                {% endfor %}
+            </ul>
+    </body>
+</html>

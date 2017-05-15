@@ -1,0 +1,10 @@
+composer.phar
+db.sqlite3
+vendor
+*~
+*.swp
+.vagrant
+node_modules
+.sass-cache
+.fseventsd
+/.idea/
