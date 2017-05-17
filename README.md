@@ -10,7 +10,7 @@ Prerequisites:
 
 Steps:
 ```
-git clone git@gitlab.com:entirelyamelia/untapped-api-test.git
+git clone https://github.com/EntirelyAmelia/untappd-api-test.git
 cd untapped-api-test
 composer install
 ```
