@@ -3,10 +3,10 @@
 class App
 {
     /** @const App constant Client id for Untapped API */
-    const CLIENT_ID = '6667163DB18BB8A954FDD45F4DC5058645B6AE74';
+    const CLIENT_ID = '';
 
     /** @const App constant Client secret for Untapped API */
-    const CLIENT_SECRET = '24230F8EB2C281ACDCC9466AA70B289B5715CF18';
+    const CLIENT_SECRET = '';
 
     /**
      * Process action for getting checkins.
